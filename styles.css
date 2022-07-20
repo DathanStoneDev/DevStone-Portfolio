@@ -1,0 +1,212 @@
+
+/*Custom properties*/
+:root {
+    --color-primary: #2a9df4;
+    --color-dark-primary: #064575;
+
+    --color-light-neutral: white;
+    --color-dark-neutral: black;
+
+    --ff-primary: 'Montserrat', sans-serif;
+}
+
+/*Removing default margins*/
+body, h1, h2, h3, p {
+    margin: 0
+}
+
+.section-header {
+    font-size: 3rem;
+    font-weight: 900;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+/*primary font used across the website*/
+body {
+    font-family: var(--ff-primary);
+}
+
+/*apply to all <a> tags*/
+a {
+    text-decoration: none;  
+}
+
+#home-section {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+/*Base container for desktop*/
+.container {
+    width: 120rem;
+}
+
+
+/*Header container holding navigation bar*/
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0px 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+/*Navigation top bar*/
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*wrapper for the home section*/
+.home-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navlink {
+        display: none;
+    }
+    .home-socials a {
+        display: none;
+    }
+    .home-wrapper {
+        flex-direction: column;
+    }
+}
+
+.logo {
+    height: 7.813rem
+}
+
+.logo img {
+    max-width:100%;
+    max-height:100%;
+}
+/* Nav links container */
+.navlinks {
+    display: flex;
+    align-items: center;
+}
+
+/*Navigation bar link styling*/
+.navlink {
+    margin-left: 2.5rem;
+    font-size: 1.25rem;
+    color: #2a9df4;
+}
+
+.navlink:hover {
+    margin-bottom: -3px;
+    border-bottom:3px solid #2a9df4;
+}
+
+/*Container for the main text in the home section*/
+.home-text {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.small-text {
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding-bottom: 0.625rem;
+    padding-left: 0.313rem;
+}
+
+
+.home-left h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    padding-bottom: 1.563rem;
+}
+
+.medium-text {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 1.25rem;
+    padding-left: 0.188rem;
+}
+
+/*Container for social links*/
+.home-socials {
+    display: flex;
+    align-items: center;
+}
+
+.home-socials a {
+    margin-right: 2.188rem;
+}
+
+/*homepage social links*/
+.home-socials a i {
+    color:#2a9df4
+}
+
+.resume-button {
+    background-image: linear-gradient(to left, #2a9df4, #064575, #2a9df4);
+    width: 10.938rem;
+    height: 2.5rem;
+    border-radius: 0.65rem;
+    border: #2a9df4;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    background-size: 200%;
+}
+
+.resume-button:hover {
+    background-position: right;
+}
+
+.home-right {
+    display: flex;
+    justify-content: center;
+}
+
+.home-right img{
+    height: auto;
+    width: 100%;
+}
+
+
+/* ABOUT ME SECTION*/
+#about-me {
+    background-color: #2a9df4;
+    min-height: 60vh;
+}
+
+.about-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*PROJECTS SECTION*/
+#project-section {
+    min-height: 100vh;
+}
+
+
+
+
+
+/*CONTACT SECTION*/
+#contact-section {
+    min-height: 60vh;
+    background-color: #2a9df4;
+}
+
