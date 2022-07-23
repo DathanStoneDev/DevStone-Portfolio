@@ -20,27 +20,25 @@
     <body>
         
         <header>
-            <div class="header-wrapper container">
-                <nav>
-                    <div class="logo">
-                        <img src="images/logo.png" alt="DevStone Logo">
-                    </div>
-                    <div class="navlinks">
+            <nav class="container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="DevStone Logo">
+                </div>
+                <div class="navlinks">
                         <a href="" class="navlink">home</a>
                         <a href="" class="navlink">about me</a>
                         <a href="" class="navlink">projects</a>
                         <a href="" class="navlink">contact</a>
-                    </div>
-                    <div class="home-socials">
-                        <a href="https://github.com/DathanStoneDev" target="_blank">
-                            <i class="fa-brands fa-github fa-2xl"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/dathanstone0327/" target="_blank">
-                            <i class="fa-brands fa-linkedin fa-2xl"></i>
-                        </a>
-                    </div>
-                </nav>
-            </div>
+                </div>
+                <div class="home-socials">
+                    <a href="https://github.com/DathanStoneDev" target="_blank">
+                        <i class="fa-brands fa-github fa-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dathanstone0327/" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-2xl"></i>
+                    </a>
+                 </div>
+            </nav>
         </header>
 
         <main>
@@ -68,29 +66,70 @@
                </div> 
             </section>
 
-            <section id="about-me"">
-                <h1 class="section-header" style="color: white";>ABOUT ME</h1>
+            <section id="about-me-section">
                 <div class="about-wrapper container">
-                    <!---
-                    <i class="fa-brands fa-java"></i>
-                    <i class="fa-solid fa-database"></i>
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css3"></i>
-                    <i class="fa-brands fa-js-square"></i>
-                    <i class="fa-brands fa-git-alt"></i>
-                    -->
+                    <h1 class="section-header";>ABOUT ME</h1>
+                    <div class="description-wrapper">
+                        <img src="images/Personal-Photo.png" alt="Photo of me">
+                        <p>My journey to becoming a devloper started when I was completing my last semester in college 
+                            in 2017, obtaining my BS in Biology. I took a wonderful Bioinformatics class and used Python 
+                            to create simple scripts. Programming was completely foregin to me and at times frustrating, but I had
+                            this drive to keep going and solve problems. The ending of that class was the end of the begining of my journey. Fast foward to 2020,
+                            I decided to enroll myself into WGU to puruse my passion for tech and make my logical thinking mindset be creative with
+                            programming. In July 2022, I've graduated with my second bachelors degree in Software Development and have an eagerness 
+                            to break into the field.
+                        </p>
+                        <div class="code-block-card">
+                            <div id="code-block">
+                                <pre id="javascript-snippet" class="code-snippet">
+ <!-------------------------------> class <b>Developer</b> {
+   <!------------------------------->   constructor() {
+   <!------------------------------->       this.firstName = 'Dathan'
+    <!------------------------------->      this.lastName = 'Stone'
+   <!------------------------------->       this.cats = 2,
+   <!------------------------------->       this.degree = 'Software Development',
+    <!------------------------------->      this.hobbies = ['Gaming', 'Coding', 'Netflix']
+    <!----------------------------------->   }
+    <!-------------------------------->}
+                                    </pre>
+                                    <pre id="java-snippet" class="code-snippet">
+ <!-------------------------------> public class <b>Developer</b> {
+   <!------------------------------->    private String firstName = 'Dathan'
+    <!------------------------------->   private String lastName 'Stone'
+   <!------------------------------->    private int cats = 2,
+   <!------------------------------->    private String degree = 'Software Development',
+    <!------------------------------->   private String[] hobbies = {'Gaming', 'Coding', 'Netflix'}
+    <!-------------------------------->}
+                                    </pre>
+                                    <pre id="kotlin-snippet" class="code-snippet">
+<!------------------------------->  data class <b>Developer</b> (
+    <!------------------------------->   val firstName: String = 'Dathan'
+     <!------------------------------->  val lastName: String 'Stone'
+    <!------------------------------->   val cats: Int = 2,
+    <!------------------------------->   val degree: String = 'Software Development',
+     <!------------------------------->  val hobbies = listOf('Gaming', 'Coding', 'Netflix')
+    <!----------------------------------->)
+                                    </pre>
+                            </div>
+                            <div class="language-selectors">
+                                <button class="language-button" onclick="selectLanguage('java')">Java</button>
+                                <button class="language-button" onclick="selectLanguage('kotlin')">Kotlin</button>
+                                <button class="language-button" onclick="selectLanguage('javascript')">Javascript</button>
+                            </div>
+                        </div>
+                    </div>
                 </div> 
              </section>
 
              <section id="project-section"">
-                <h1 class="section-header" style="color: black";>PROJECTS</h1>
+                <h1 class="section-header";>PROJECTS</h1>
                 <div class="about-wrapper container">
                     
                 </div> 
              </section>
 
              <section id="contact-section"">
-                <h1 class="section-header" style="color: white";>CONTACT</h1>
+                <h1 class="section-header";>CONTACT</h1>
                 <div class="about-wrapper container">
                     
                 </div> 
@@ -115,13 +154,22 @@
 
 
         </main>
-
         <footer>
-            
+            <div class="footer-wrapper container">
+                <img src="images/logo-swapped-colors.png" class="logo" alt="Logo">
+                <p>Designed and Built by Dathan Stone</p>
+                <div class="footer-socials">
+                    <a href="https://github.com/DathanStoneDev" target="_blank">
+                        <i class="fa-brands fa-github fa-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dathanstone0327/" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-2xl"></i>
+                    </a>
+                </div>
+            </div>
         </footer>
 
 
-
-        <script src="" async defer></script>
+        <script src="javascript/index.js" async defer></script>
     </body>
 </html>
