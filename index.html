@@ -16,6 +16,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
         <link rel="manifest" href="favicon/site.webmanifest">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         
@@ -25,10 +26,10 @@
                     <img src="images/logo.png" alt="DevStone Logo">
                 </div>
                 <div class="navlinks">
-                        <a href="" class="navlink">home</a>
-                        <a href="" class="navlink">about me</a>
-                        <a href="" class="navlink">projects</a>
-                        <a href="" class="navlink">contact</a>
+                        <a href="#home-section" class="navlink">home</a>
+                        <a href="#about-me-section" class="navlink">about me</a>
+                        <a href="#project-section" class="navlink">projects</a>
+                        <a href="#contact-section" class="navlink">contact</a>
                 </div>
                 <div class="home-socials">
                     <a href="https://github.com/DathanStoneDev" target="_blank">
@@ -43,7 +44,7 @@
 
         <main>
             <!--Home Section-->
-            <section id="home-section">
+            <section id="home-section" data-aos="fade-up" data-aos-duration="3000">
                <div class="home-wrapper container">
                    <!--Left side of the home section-->
                     <div class="home-left">
@@ -51,7 +52,7 @@
                             <p class="small-text">Hello there, I'm</p>
                             <h1>Dathan Stone</h1>
                             <p class="medium-text">SOFTWARE DEVELOPER</p>
-                            <p class="medium-text"><i class="fa-solid fa-code fa-1xl"></i> Backend, Mobile and a hint of Front-end</p>
+                            <p class="medium-text"><i class="fa-solid fa-code fa-1xl"></i> Backend, Mobile and a hint of Front-End</p>
                         </div>
                         <div class="home-actions">
                             <button class="resume-button">Download Resume</button>
@@ -66,12 +67,12 @@
                </div> 
             </section>
 
-            <section id="about-me-section">
+            <section id="about-me-section" data-aos="fade-up" data-aos-duration="2000">
                 <div class="about-wrapper container">
                     <h1 class="section-header";>ABOUT ME</h1>
                     <div class="description-wrapper">
-                        <img src="images/Personal-Photo.png" alt="Photo of me">
-                        <p>My journey to becoming a devloper started when I was completing my last semester in college 
+                        <img src="images/Personal-Photo.png" alt="Photo of me" data-aos="fade-right" data-aos-duration="2000">
+                        <p data-aos="fade-right" data-aos-duration="2000">My journey to becoming a devloper started when I was completing my last semester in college 
                             in 2017, obtaining my BS in Biology. I took a wonderful Bioinformatics class and used Python 
                             to create simple scripts. Programming was completely foregin to me and at times frustrating, but I had
                             this drive to keep going and solve problems. The ending of that class was the end of the begining of my journey. Fast foward to 2020,
@@ -79,7 +80,7 @@
                             programming. In July 2022, I've graduated with my second bachelors degree in Software Development and have an eagerness 
                             to break into the field.
                         </p>
-                        <div class="code-block-card">
+                        <div class="code-block-card" data-aos="fade-left" data-aos-duration="2000">
                             <div id="code-block">
                                 <pre id="javascript-snippet" class="code-snippet">
  <!-------------------------------> class <b>Developer</b> {
@@ -121,23 +122,216 @@
                 </div> 
              </section>
 
-             <section id="project-section"">
-                <h1 class="section-header";>PROJECTS</h1>
-                <div class="about-wrapper container">
+             <section id="project-section" data-aos="fade-up" data-aos-duration="2000">
+                <div class="project-wrapper container">
+                    <h1 class="section-header";>PROJECTS</h1>
+                    <div class="projects">
+                        <div class="project" data-aos="fade-left" data-aos-duration="2000">
+                            <div class="project-description">
+                                <h2>Punches Manager - Android App</h2>
+                                <div class="technology-stack">
+                                    <h3>Technology</h3>
+                                    <ul>
+                                        <li>
+                                            <p>Kotlin</p>
+                                        </li>
+                                        <li>
+                                            <p>Jetpack Compose</p>
+                                        </li>
+                                        <li>
+                                            <p>SQLite (ROOM Database)</p>
+                                        </li>
+                                    </ul>
+                                    <h3>Features</h3>
+                                    <ul>
+                                        <li>
+                                            <p>MVVM architecture.</p>
+                                        </li>
+                                        <li>
+                                            <p>CRUD functionality.</p>
+                                        </li>
+                                        <li>
+                                            <p>BCrypt password encryption.</p>
+                                        </li>
+                                        <li>
+                                            <p>Dagger-Hilt for dependency injection/management</p>
+                                        </li>
+                                    </ul>
+                                    <div class="project-git">
+                                        <div class="project-link">
+                                            <a href="https://github.com/DathanStoneDev/Punches-Manager" target="_blank">
+                                                <i class="fa-brands fa-github fa-2x"></i>
+                                            </a>
+                                            <p>Source Code</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-media">
+                                
+                            </div>
+                        </div>
+                        <div class="project" data-aos="fade-right" data-aos-duration="2000">
+                            <div class="project-description">
+                                <h2>NFL Team Stat Tracker - REST API</h2>
+                                <div class="technology-stack">
+                                    <h3>Technology</h3>
+                                    <ul>
+                                        <li>
+                                            <p>Java 8</p>
+                                        </li>
+                                        <li>
+                                            <p>Springboot (v2.5.5)</p>
+                                        </li>
+                                        <li>
+                                            <p>Jsoup (v1.14.3)</p>
+                                        </li>
+                                    </ul>
+                                    <h3>Features</h3>
+                                    <ul>
+                                        <li>
+                                            <p>REST API architecture. Users get back team data in JSON format.</p>
+                                        </li>
+                                        <li>
+                                            <p>Parses the NFL website for team stat data through a custom
+                                                web scraping service using the Jsoup Library.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>Hosted on Heroku.</p>
+                                        </li>
+                                        <li>
+                                            <p>Real time testing through Swagger-UI documentation.</p>
+                                        </li>
+                                    </ul>
+                                    <div class="project-git">
+                                        <div class="project-link">
+                                            <a href="https://github.com/DathanStoneDev/NFL-Team-Stats-API" target="_blank">
+                                                <i class="fa-brands fa-github fa-2x"></i>
+                                            </a>
+                                            <p>Source Code</p>
+                                        </div>
+                                        <div class="project-link">
+                                            <a href="https://nfl-team-stat-tracker.herokuapp.com/swagger-ui/" target="_blank">
+                                                <i class="fa-solid fa-laptop-code fa-2x"></i>
+                                            </a>
+                                            <p>Swagger UI Live</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-media">
+                                
+                            </div>
+                        </div>
+                        <div class="project" data-aos="fade-left" data-aos-duration="2000">
+                            <div class="project-description">
+                                <h2>Portfolio Wesbite</h2>
+                                <div class="technology-stack">
+                                    <h3>Technology</h3>
+                                    <ul>
+                                        <li>
+                                            <p>HTML 5</p>
+                                        </li>
+                                        <li>
+                                            <p>CSS 3</p>
+                                        </li>
+                                        <li>
+                                            <p>Vanilla Javascript</p>
+                                        </li>
+                                    </ul>
+                                    <h3>Features</h3>
+                                    <ul>
+                                        <li>
+                                            <p>Fully responsive design.</p>
+                                        </li>
+                                        <li>
+                                            <p>Animate on Scroll (AOS) Library to provide seamless fade animations.</p>
+                                        </li>
+                                        <li>
+                                            <p>FormSubmit for handling messages from users.</p>
+                                        </li>
+                                        <li>
+                                            <p>Amazon CloudFront for secure hosting with the AWS content delivery network (CDN).</p>
+                                        </li>
+                                    </ul>
+                                    <div class="project-git">
+                                        <div class="project-link">
+                                            <a href="https://github.com/DathanStoneDev/DevStone-Portfolio" target="_blank">
+                                                <i class="fa-brands fa-github fa-2x"></i>
+                                            </a>
+                                            <p>Source Code</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-media">
+                                
+                            </div>
+                        </div>
+                        <div class="project" data-aos="fade-right" data-aos-duration="2000">
+                            <div class="project-description">
+                                <h2>Random Animal Facts - Android App (Work In Progress)</h2>
+                                <div class="technology-stack">
+                                    <h3>Technology</h3>
+                                    <ul>
+                                        <li>
+                                            <p>Kotlin</p>
+                                        </li>
+                                        <li>
+                                            <p>Jetpack Compose</p>
+                                        </li>
+                                        <li>
+                                            <p>Retrofit</p>
+                                        </li>
+                                        <li>
+                                            <p>Zoo Animal Api</p>
+                                        </li>
+                                    </ul>
+                                    <h3>Features</h3>
+                                    <ul>
+                                        <li>
+                                            <p>MVVM architecture.</p>
+                                        </li>
+                                        <li>
+                                            <p>CRUD functionality.</p>
+                                        </li>
+                                        <li>
+                                            <p>BCrypt password encryption.</p>
+                                        </li>
+                                        <li>
+                                            <p>Dagger-Hilt for dependency injection/management</p>
+                                        </li>
+                                    </ul>
+                                    <div class="project-git">
+                                        <div class="project-link">
+                                            <a href="https://github.com/DathanStoneDev/Animal-Repository" target="_blank">
+                                                <i class="fa-brands fa-github fa-2x"></i>
+                                            </a>
+                                            <p>Source Code</p>
+                                        </div>
+                                    </div>
+                                </div>       
+                            </div>
+                            <div class="project-media">
+                                
+                            </div>
+                        </div>
+                    </div>
                     
                 </div> 
              </section>
 
-             <section id="contact-section"">
+             <section id="contact-section" data-aos="fade-up" data-aos-duration="2000">
                 <div class="contact-wrapper container">
                     <h1 class="section-header";>CONTACT</h1>
                     <div class="contact-info">
-                        <div class="contact-left-side">
+                        <div class="contact-left-side" data-aos="fade-right" data-aos-duration="2000">
                             <i class="fa-solid fa-message fa-5x"></i>
                             <h3>Thank you for visiting</h3>
                             <p>To get in contact with me, leave a message!</p>
                         </div>
-                        <div class="contact-right-side">
+                        <div class="contact-right-side" data-aos="fade-left" data-aos-duration="2000">
                             <form id="contact-form" action="https://formsubmit.co/developer.stone@outlook.com" method="POST">
                                 <input type="hidden" name="_captcha" value="false">
                                 <input type="text" name="_honey" style="display:none">
@@ -178,6 +372,10 @@
                 </div>
             </div>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
         <script src="javascript/index.js" async defer></script>
     </body>
 </html>

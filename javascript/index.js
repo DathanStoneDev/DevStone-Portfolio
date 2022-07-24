@@ -1,7 +1,7 @@
 const languageSelectors = document.getElementsByClassName("language-button")
 const codeBlock = document.getElementById("code-block")
 
-let javaSnippet = document.getElementById("java-snippet")
+const javaSnippet = document.getElementById("java-snippet")
 const javascriptSnippet = document.getElementById("javascript-snippet")
 const kotlinSnippet = document.getElementById("kotlin-snippet")
 
