@@ -2,14 +2,23 @@
 /*Custom properties*/
 :root {
     --color-primary: #1a73e8;
-    --color-dark-primary: #064575;
 
     --color-secondary: #f8f9fa;
 
     --color-light-neutral: white;
     --color-dark-neutral: black;
 
+    --color-button-hover: #666666;
+
     --ff-primary: 'Montserrat', sans-serif;
+}
+
+.dark-mode {
+    --color-primary: white;
+    --color-light-neutral: black;
+    --color-secondary: #666666;
+    --color-dark-neutral: white;
+    --color-button-hover: rgb(242, 242, 9);
 }
 
 /*Removing default margins*/
@@ -46,7 +55,7 @@ a {
     display: flex;
     justify-content: center;
     min-height: 100vh;
-
+    background-color: var(--color-light-neutral)
 }
 
 
@@ -68,6 +77,16 @@ header {
     display: none;
 }
 
+.mode-button {
+    border: 0;
+    background-color: transparent;
+    color: var(--color-primary);
+}
+
+.mode-button:hover {
+    color: var(--color-button-hover)
+}
+
 /*Navigation top bar*/
 nav {
     display: flex;
@@ -79,6 +98,10 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.home-wrapper h1 {
+    color: var(--color-dark-neutral);
 }
 
 /*Logo container size*/
@@ -123,6 +146,7 @@ nav {
     font-weight: 400;
     padding-bottom: 0.625rem;
     padding-left: 0.313rem;
+    color: var(--color-dark-neutral);
 }
 
 
@@ -137,6 +161,7 @@ nav {
     font-weight: 400;
     padding-bottom: 1.25rem;
     padding-left: 0.188rem;
+    color: var(--color-dark-neutral);
 }
 
 /*Container for social links*/
@@ -152,25 +177,6 @@ nav {
 /*homepage social links*/
 .home-socials a i {
     color:var(--color-primary);
-}
-
-/*Resume Download Button styling*/
-.resume-button {
-    background-image: linear-gradient(to left, var(--color-primary), var(--color-dark-primary), var(--color-primary));
-    width: 10.938rem;
-    height: 2.5rem;
-    border-radius: 0.65rem;
-    border: var(--color-primary);
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: var(--color-light-neutral);
-    transition: 0.5s;
-    cursor: pointer;
-    background-size: 200%;
-}
-
-.resume-button:hover {
-    background-position: right;
 }
 
 .home-right {
@@ -198,6 +204,10 @@ nav {
     max-width: 100%;
 }
 
+.about-wrapper h1 {
+    color: var(--color-dark-neutral);
+}
+
 .description-wrapper {
     display: flex;
     align-items: center;
@@ -214,6 +224,7 @@ nav {
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0px 3px 5px rgba(57, 63, 72, 0.3);
+    color: var(--color-dark-neutral);
 
 }
 
@@ -276,6 +287,7 @@ nav {
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    background-color: var(--color-light-neutral);
 }
 
 .projects {
@@ -284,6 +296,10 @@ nav {
     margin-top: 6rem;
     margin-bottom: 4rem;
     align-items: center;
+}
+
+.projects h1 {
+    color: var(--color-dark-neutral);
 }
 
 .project {
@@ -305,6 +321,11 @@ nav {
 
 .project-description h2 {
     margin-bottom: 0.5rem;
+}
+
+.nfl-media :first-child {
+    display: flex;
+    align-items: center;
 }
 
 .technology-stack li {
@@ -333,17 +354,33 @@ nav {
 
 
 .project-media {
+    display: flex;
     border-radius: 1rem;
     width: 40%;
     background-color: var(--color-primary);
+    justify-content: center;
+    align-items: center;
+}
+
+.project-media video {
+    width: 100%;
+    height: 100%;
 }
 
 .project-media img {
-    max-width:100%;
-    max-height:100%;    
+    max-width: 90%;
+    max-height:90%; 
+    border-radius: 1rem;   
 }
 
+.animals-logo {
+    display: flex;
+    justify-content: center;
+}
 
+.animals-logo img{
+    height: 75%;
+}
 
 /*CONTACT SECTION*/
 #contact-section {
@@ -356,6 +393,10 @@ nav {
 .contact-wrapper {
     display: flex;
     flex-direction: column;
+}
+
+.contact-wrapper h1 {
+    color: var(--color-dark-neutral);
 }
 
 .contact-info {
@@ -387,6 +428,11 @@ nav {
 
 .contact-left-side h3{
     margin-bottom: 0.5rem;
+    color: var(--color-dark-neutral);
+}
+
+.contact-left-side p {
+    color: var(--color-dark-neutral);
 }
 
 .contact-right-side {
@@ -557,6 +603,17 @@ footer {
 
     }
 
+    .project-media {
+        align-items: center;
+    }
+
+
+    .project-media img {
+        width: 100%;
+        height: 70%;
+    }
+
+
     .name-email-fields {
         flex-direction: column;
     }
@@ -606,6 +663,16 @@ footer {
         margin-right: 0;
     }
 
+    .project-media {
+        align-items: center;
+    }
+
+
+    .project-media img {
+        width: 100%;
+        height: 40%;
+    }
+
     .code-block-card {
         margin-left: 0;
 
@@ -640,6 +707,8 @@ footer {
     display: flex;
     flex-direction: column;
 }
+
+
 
 /*Mobile Devices*/
 @media only screen and (max-width: 640px) {
@@ -791,4 +860,5 @@ footer {
 
 
 }
+
 

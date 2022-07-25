@@ -1,14 +1,38 @@
 
+//Button on homepage that can change light or dark mode
+const modeButton = document.getElementById("mode-button")
+modeButton.addEventListener("click", displaySettingSwitch)
+
+let isDay = true;
+
+//Changes the display setting.
+function displaySettingSwitch() {
+
+    isDay = !isDay;
+    const rootElement = document.querySelector(':root')
+    rootElement.classList.toggle("dark-mode")
+    document.getElementById("header-logo").src = "images/dark-mode-logo.png";
+    document.getElementById("footer-logo").src = "images/logo.png";
+
+    //if toggled back to isDay, change back to original images.
+    if(isDay) {
+        document.getElementById("header-logo").src = "images/logo.png";
+        document.getElementById("footer-logo").src = "images/logo-swapped-colors";
+    }
+}
+
+
+
+
 //Hamburger Navigation variables
 const hamburgerButton = document.getElementById("hamburger")
 const navList = document.getElementById("nav-links")
+hamburgerButton.addEventListener('click', toggleNav)
 
 //Toggle function for the hamburger button
 function toggleNav() {
     navList.classList.toggle('show')
 }
-
-hamburgerButton.addEventListener('click', toggleNav)
 
 
 //Code Block Variables
