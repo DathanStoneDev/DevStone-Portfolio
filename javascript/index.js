@@ -22,8 +22,6 @@ function displaySettingSwitch() {
 }
 
 
-
-
 //Hamburger Navigation variables
 const hamburgerButton = document.getElementById("hamburger")
 const navList = document.getElementById("nav-links")
@@ -67,10 +65,6 @@ function selectLanguage(language) {
                 kotlinSnippet.style.display = "none"
                 javaSnippet.style.display = "none"
                 break;
-            case "sql":
-                code.textContent = "Hello             SQL"  
-            break;
-    
         }
     
 }
