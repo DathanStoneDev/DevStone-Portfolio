@@ -42,3 +42,8 @@ I wanted to deploy my website to a provider that is extremely fast, reliable and
 4. Requested SSL in AWS Certificate Manager: Lastly, I requested my SSL certificate so I can apply the HTTPS protocol to my website.
 
 ## Reflection
+This site took me a weekend to create and I felt that I started to really develop more of my frontend skills.  This is a project that will probably be updated regulary to reflect my projects and journey throughout my career. <br/>
+
+#### Future Plans
+:small_blue_diamond: Utilize GitHub Actions to create a CI/CD Pipeline. I want to update my S3 bucket and invalidate my CloudFront Cache (for immediate updates) whenever this repository is updated via "push". <br/>
+:small_blue_diamond: Clean up the CSS file.
