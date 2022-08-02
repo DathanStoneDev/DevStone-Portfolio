@@ -7,6 +7,7 @@ My very own website that truly reflects who I am as a developer! When I was plan
 :small_blue_diamond: Fully responsive design for mobile, small, medium and large screens. <br/>
 :small_blue_diamond: seemless animations using the Animate On Scroll (AOS) library. <br/>
 :small_blue_diamond: Lightning fast loading time due to Amazon Web Services hosting. <br/>
+:small_blue_diamond: FormSubmit for a serveless form, so users can send me an email.
 
 
 ## Built with
