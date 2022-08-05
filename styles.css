@@ -862,6 +862,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .thank-you-box h1 {
@@ -885,6 +886,13 @@ thank-you-image-holder {
 
 .thank-you-image-holder img {
     height: 250px;
+}
+
+.thank-you-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 

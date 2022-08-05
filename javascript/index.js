@@ -17,7 +17,7 @@ function displaySettingSwitch() {
     //if toggled back to isDay, change back to original images.
     if(isDay) {
         document.getElementById("header-logo").src = "images/logo.png";
-        document.getElementById("footer-logo").src = "images/logo-swapped-colors";
+        document.getElementById("footer-logo").src = "images/logo-swapped-colors.png";
     }
 }
 
