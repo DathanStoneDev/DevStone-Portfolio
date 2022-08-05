@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# DevStone-Portfolio
-My personal portfolio website/
-=======
 # www.devstone.io
 
 ### My personal portfolio website
@@ -53,4 +49,4 @@ This site took me a weekend to create and I felt that I started to really develo
 #### Future Plans
 :small_blue_diamond: Utilize GitHub Actions to create a CI/CD Pipeline. I want to update my S3 bucket and invalidate my CloudFront Cache (for immediate updates) whenever this repository is updated via "push". <br/>
 :small_blue_diamond: Clean up the CSS file.
->>>>>>> 1b5670449822387594c06319c64d537c4731a1f8
+
