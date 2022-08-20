@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-# DevStone-Portfolio
-My personal portfolio website/
-=======
 # www.devstone.io
 
 ### My personal portfolio website
-My very own website that truly reflects who I am as a developer! When I was planning the design of my site, I kept thinking to myself "Should I use a static website generator? What framework is the best? Should I use a CSS framework?", and it seemed there were so many choices to pick from. Instead of mulling over the endless combiations I could use, I decided with the foundations of the web: HTML, CSS and Vanilla Javascript.<br/>
+My very own website that truly reflects who I am as a developer! When I was planning the design of my site, I kept thinking to myself "Should I use a static website generator? What framework is the best? Should I use a CSS framework?", and it seemed there were so many choices to pick from. Instead of mulling over the endless combinations I could use, I decided with the foundations of the web: HTML, CSS and Vanilla Javascript.<br/>
 
 ## Features
 :small_blue_diamond: Fully responsive design for mobile, small, medium and large screens. <br/>
@@ -53,4 +49,4 @@ This site took me a weekend to create and I felt that I started to really develo
 #### Future Plans
 :small_blue_diamond: Utilize GitHub Actions to create a CI/CD Pipeline. I want to update my S3 bucket and invalidate my CloudFront Cache (for immediate updates) whenever this repository is updated via "push". <br/>
 :small_blue_diamond: Clean up the CSS file.
->>>>>>> 1b5670449822387594c06319c64d537c4731a1f8
+
